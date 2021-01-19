@@ -57,10 +57,6 @@ nav a{
 	padding:.75em;
 }
 
-nav a:hover {
-
-}
-
 footer {
     width:100vw; height:20vh;
     background:gray;
@@ -90,7 +86,7 @@ footer p {
 
 #landingImg{
 	border:medium solid black;
-	background:url(https://picsum.photos/400);
+	background:url(https://picsum.photos/550);
     width:30%; height:100%;
 }
 
@@ -164,4 +160,51 @@ footer button {
 	padding:.75em;
 	cursor:pointer;
 	text-transform:lowercase;
+}
+
+/*Breakpoints*/
+
+@media (max-width:800px) {
+	#landingImg {
+		width:100%;
+	}
+}
+
+@media (max-width:500px) {
+	#landing {
+		background-color: black;
+		color:lightgray;
+		margin-top: 5%;
+	}
+	#landingImg {
+		border:none;
+	}
+	#gallery {
+		flex-direction:column;
+	}
+	.galleryImg {
+		border: none;
+	}
+	.galleryText {
+		width:100%;
+		display:flex;
+		justify-content: center;
+		margin:0;
+		padding: 5% 0 5% 0;
+		color:white;
+		font-size: 2em;
+		text-transform: lowercase;
+		opacity: 0.3;
+		letter-spacing: normal;
+		text-shadow: 2px 2px 5px black;
+	}
+	h2 {
+		display: none;
+	}
+	footer p {
+		display: none;
+	}
+	footer button {
+		margin-top: 5%;
+	}
 }
